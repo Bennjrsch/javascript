@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let ans = prompt("Velg tall mellom 0 og 100?");
+      if (ans > 0 && ans < 101) {
+        for (let i = 0; i < ans; i++) {
+          console.log(i);
+          document.write(i + "<br>");
+        }
+      } else {
+        alert("Det er ikke et tall mellom 0 og 100");
+      }
+    </script>
+  </body>
+</html>

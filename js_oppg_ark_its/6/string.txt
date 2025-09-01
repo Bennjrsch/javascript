@@ -1,0 +1,3 @@
+Ordet string er en datatype som representerer tekst. 
+Grunnen til dette er på grunn av at ordet tekst vil som regel være sammenhengene 
+men ordet string kan være tilfeldig og vanskelig å forstå for et menneske. 

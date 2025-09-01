@@ -1,0 +1,46 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.everything {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.over {
+    text-align: center;
+    margin-bottom: 50px;
+    display: grid;
+}
+
+.over h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.coinflip {
+    display: grid;
+}
+
+.coinflip img {
+    width: 400px;
+    height: 400px;
+}
+
+.under {
+    display: grid;
+    margin-top: 20px;
+}
+
+button {
+    padding: 30px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+}
+

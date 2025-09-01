@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const questionsAndAnswers = {
+        "Når ble interstellar utgitt?": "2014",
+        "Hvor ble filmen filmet?": "Lost Angeles",
+        "Hvem er regiseren?": "Denis Villeneuve",
+        "Hvem var hovedpersonen?": "Cooper",
+        "Hvem spillte hovedpersonen?": "Matthew McConaughey",
+      };
+      let i = 0;
+      for (const [key, value] of Object.entries(questionsAndAnswers)) {
+        console.log(key, value);
+        if (prompt(key).toLowerCase() == value.toLowerCase()) {
+          alert("Du er rett");
+        } else {
+          alert(`Du er feil, det var ${value}`);
+        }
+      }
+    </script>
+  </body>
+</html>

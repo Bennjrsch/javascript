@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Klikk på meg</h1>
+    <p id="text"></p>
+    <script>
+      const header = document.getElementById("header");
+      const text = document.getElementById("text");
+
+      header.addEventListener("mouseover", () => {
+        console.log("Header hovered!");
+        header.style.color = "blue";
+      });
+
+      header.addEventListener("mouseout", () => {
+        console.log("Header mouseout!");
+        header.style.color = "black";
+      });
+
+      header.addEventListener("click", () => {
+        console.log("Header clicked!");
+        text.textContent = "Du klikket på teksten!";
+      });
+    </script>
+  </body>
+</html>
