@@ -13,17 +13,14 @@
       const text = document.getElementById("text");
 
       header.addEventListener("mouseover", () => {
-        console.log("Header hovered!");
         header.style.color = "blue";
       });
 
       header.addEventListener("mouseout", () => {
-        console.log("Header mouseout!");
         header.style.color = "black";
       });
 
       header.addEventListener("click", () => {
-        console.log("Header clicked!");
         text.textContent = "Du klikket på teksten!";
       });
     </script>

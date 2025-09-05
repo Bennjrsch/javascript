@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <p id="question">Hvilken land har størst hovedstad i areal?</p>
+    <div>
+      <button>Kina, Beijing</button>
+      <button>Myanmar, Burma</button>
+      <button>Frankrike, Paris</button>
+      <button>Russland, Moskva</button>
+      <button>Japan, Tókyo</button>
+    </div>
+
+    <script>
+      const question = document.getElementById("question");
+      const buttons = document.querySelectorAll("button");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.textContent === "Myanmar, Burma") {
+            console.log("Riktig!");
+            alert("Riktig");
+          } else {
+            console.log("Feil!");
+            alert("Feil");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
