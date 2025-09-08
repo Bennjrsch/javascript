@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numarray = Array.from({ length: 10 }, (_, i) => i + 1);
+      const randomArray = numarray.map(
+        (n) => Math.floor(Math.random() * (100 - 1 + 1)) + 1
+      );
+      for (let i = 0; i < randomArray.length; i++) {
+        document.write(
+          `Kvadaten av ${randomArray[i]} er ${
+            randomArray[i] * randomArray[i]
+          } og kvadratroen er ${Math.sqrt(randomArray[i]).toFixed(1)}<br>`
+        );
+      }
+    </script>
+  </body>
+</html>
