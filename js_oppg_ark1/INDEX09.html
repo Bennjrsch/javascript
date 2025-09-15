@@ -15,14 +15,17 @@
         "Hvem spillte hovedpersonen?": "Matthew McConaughey",
       };
       let i = 0;
+      let points = 0;
       for (const [key, value] of Object.entries(questionsAndAnswers)) {
         console.log(key, value);
         if (prompt(key).toLowerCase() == value.toLowerCase()) {
           alert("Du er rett");
+          points++;
         } else {
           alert(`Du er feil, det var ${value}`);
         }
       }
+      alert(`Du fikk ${points} poeng`);
     </script>
   </body>
 </html>
